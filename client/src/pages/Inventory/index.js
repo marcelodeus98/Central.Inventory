@@ -4,6 +4,7 @@ import  Header  from '../../components/Header';
 import {FiTrash2 } from 'react-icons/fi';
 import {ImEnter} from 'react-icons/im';
 import {ImExit} from 'react-icons/im';
+import {TbEdit} from 'react-icons/tb';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
 import {Form, Input} from '@rocketseat/unform';
@@ -79,10 +80,30 @@ function Client() {
             </div>
           </div>
           <Header/>
+          <div className='container-buttons'>
+            <Link to='/update-product'>
+              <button  type="button" className='button'>EDITAR
+                <TbEdit size={45} color="#FFF" />
+              </button>
+            </Link>
+
+            <Link to='/input-product'>
+              <button  type="button" className='button'>ENTRADA
+                <ImEnter size={45} color="#FFF"/>
+              </button>
+            </Link>
+
+            <Link to='/output-product'>
+              <button  type="button" className='button'>SAIDA
+                <ImExit size={45} color="#FFF" />
+              </button>
+            </Link>
+          </div>
           <div className='container-client-itens'>
           <ul className ="container-client-itens" style={{background:'#1E90FF',marginTop:10, padding:40, borderRadius:8, width:'auto'}}>
               {products.map(product => (
                 <li key={product.id} style={{width:'auto'}}>
+                
                 <div>
                   <strong>ID do equipamento</strong>
                   <p name="id_equipment">{product.id_equipment}</p>
@@ -99,21 +120,9 @@ function Client() {
                   </div>
 
                   <div className='container-buttons'>
-                  
-                  <Link to='/input-product'>
-                      <button  type="button">
-                        <ImEnter size={20} color="#a8a8b3" />
-                      </button>
-                    </Link>
-
-                    <Link to='/output-product'>
-                      <button  type="button">
-                        <ImExit size={20} color="#a8a8b3" />
-                      </button>
-                    </Link>
 
                     <button onClick={openModal} type="button" style={{paddingLeft:20}}>
-                        <FiTrash2 size={20} color="#a8a8b3" />
+                        <FiTrash2 className='button-delete' size={40} color="#a8a8b3" />
                       </button>
 
                       <div className="container-modal">

@@ -59,6 +59,23 @@ client-container{
 .container-buttons {
   display: flex;
   justify-content: space-between;
+  
+}
+
+.container-buttons button {
+  width: 260px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-buttons button svg{
+  padding-left: 15px;
+}
+
+.container-buttons button svg .button-delete{
+  padding-left: 0;
 }
 
 .client-container ul li button:hover {

@@ -17,6 +17,32 @@ module.exports = {
        name_equipment,
       })
     },
+    
+  async update_Equipment (request, response) {
+    const schema = object().shape({
+      id_equipment: number().required(),
+      name_equipment: string().required()
+    });
+
+    if(!(await schema.isValid(request.body))) {
+      return response.status(400).json({ error: 'Validation fails.' })
+    }
+
+    const {id_equipment, name_equipment} = request.body;
+
+    const equipment = await Equipment.findByPk(id_equipment);
+
+    if (!equipment) {
+      return response.status(401).json({ error: 'Equipment not update' });
+    }
+
+    equipment.name_equipment = name_equipment;
+
+    const nameSave = await equipment.save();
+
+    return response.status(200).json({msg: 'Equipment update!.'})
+
+  },
   
   async input_Equipment (request, response) {
     const schema = object().shape({

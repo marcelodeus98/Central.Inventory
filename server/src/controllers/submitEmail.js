@@ -16,12 +16,12 @@ let transporter = nodemailer.createTransport({
   }
 });
 
-let sendEmail = (value1, value2) => {
+let sendEmail = (value1, value2, value3) => {
   transporter.sendMail({
   from:'Marcelo Deus <marcelodeus98@outlook.com>',
   to: 'ti@modacolmeia.com',
   subject: 'Produto em baixa quantidade no estoque',
-  text: `O ${value1}, ${value2}, está com a quantidade baixa no estoque, sendo recomendado requisição do mesmo!`
+  text: `O produto ${value1} - COD:${value2}, está com a quantidade baixa no estoque (${value3}), sendo recomendado requisição do mesmo!`
   }).then(message => {
   console.log(message);
   }).catch(err => {
@@ -41,9 +41,11 @@ let sendEmail = (value1, value2) => {
   
   equipment.map(itens => {
     itens.id_equipment,
-    itens.name_equipment
+    itens.name_equipment,
+    itens.quant_equipment
     
-    return sendEmail(itens.id_equipment, itens.name_equipment);
+    return sendEmail(itens.name_equipment, itens.id_equipment, itens.quant_equipment);
+
   })
  }
 

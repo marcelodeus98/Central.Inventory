@@ -5,6 +5,7 @@ import Dashboard from '../pages/Dashboard';
 import InputProduct from '../pages/InputProduct';
 import OutputProduct from '../pages/OutputProduct';
 import Inventory from '../pages/Inventory';
+import UpdateProduct from '../pages/UpdateProduct';
 
 
 export default function Routes() {
@@ -15,6 +16,7 @@ export default function Routes() {
         <Route path="/input-product" exact component={InputProduct}/>
         <Route path="/output-product" exact component={OutputProduct}/>
         <Route path="/inventory" exact component={Inventory}/>
+        <Route path="/update-product" exact component={UpdateProduct}/>
 
       </Switch>
     </BrowserRouter>
