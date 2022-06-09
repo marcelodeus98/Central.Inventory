@@ -33,7 +33,7 @@ function OutputProduct() {
   return (
     <>
       <section className="logo-container">
-        <h1 className="title-lgconatiner">Central.Inventory</h1>
+        <h1 className="title-conatiner">Central.Inventory</h1>
       </section>  
       <Form onSubmit={handleUpdateQuant_all} schema={InputEquipment}>  
         <div className='client-container'>

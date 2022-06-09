@@ -8,8 +8,7 @@ import './styles.css';
 
 const UpdateEquipment = yup.object().shape({
   id_equipment: yup.number().required("O ID do equipamento é obrigatório"),
-  name_equipment: yup.string().required("É nome do equipamento é obrigatório"),
-  
+  name_equipment: yup.string().required("É nome do equipamento é obrigatório"), 
 }
 )
 

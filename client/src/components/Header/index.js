@@ -9,7 +9,7 @@ function Header() {
       <div className='client-container'> 
           <header>
               <button className='button' type='submit'>SALVAR
-              <VscSaveAs size={48} color='#fff' /> 
+              <VscSaveAs size={48} color='#000000' /> 
               </button>
           </header>
       </div>

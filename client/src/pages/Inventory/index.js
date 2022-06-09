@@ -66,16 +66,16 @@ function Client() {
   return (
     <>
       <section className="logo-container" style={{width:'auto'}}>
-        <h1 className="title-lgcontainer">Central.Inventory</h1>
+        <h1 className="title-lgcontainer" style={{background:'#FFD700'}}>Central.Inventory</h1>
       </section>   
         <Form onSubmit={handleRegisterSubmit} schema={validateNameEquipment}>   
           <div className='client-container'>
             <GoBackLink/>
         
 
-          <div style={{background:'#1E90FF', marginTop:20, padding:20, borderRadius:8, width:'auto'}}>
+          <div style={{background:'#FFD700', marginTop:20, padding:20, borderRadius:8, width:'auto'}}>
             <div className='input-group'>
-              <h1 className="title-lgcontainer">Cadastro de produto</h1>
+              <h1 className="title-lgcontainer" style={{background:'#FFD700'}}>Cadastro de produto</h1>
               <Input name='name_equipment' className='title-lgconatainer' placeholder='Produto'/>
             </div>
           </div>
@@ -83,24 +83,24 @@ function Client() {
           <div className='container-buttons'>
             <Link to='/update-product'>
               <button  type="button" className='button'>EDITAR
-                <TbEdit size={45} color="#FFF" />
+                <TbEdit size={45} color="#000000" />
               </button>
             </Link>
 
             <Link to='/input-product'>
               <button  type="button" className='button'>ENTRADA
-                <ImEnter size={45} color="#FFF"/>
+                <ImEnter size={45} color="#000000"/>
               </button>
             </Link>
 
             <Link to='/output-product'>
               <button  type="button" className='button'>SAIDA
-                <ImExit size={45} color="#FFF" />
+                <ImExit size={45} color="#000000" />
               </button>
             </Link>
           </div>
           <div className='container-client-itens'>
-          <ul className ="container-client-itens" style={{background:'#1E90FF',marginTop:10, padding:40, borderRadius:8, width:'auto'}}>
+          <ul className ="container-client-itens" style={{background:'#FFD700',marginTop:10, padding:40, borderRadius:8, width:'auto'}}>
               {products.map(product => (
                 <li key={product.id} style={{width:'auto'}}>
                 

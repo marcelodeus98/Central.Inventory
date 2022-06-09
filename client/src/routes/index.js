@@ -6,7 +6,7 @@ import InputProduct from '../pages/InputProduct';
 import OutputProduct from '../pages/OutputProduct';
 import Inventory from '../pages/Inventory';
 import UpdateProduct from '../pages/UpdateProduct';
-
+import Login from '../pages/Login'
 
 export default function Routes() {
   return (
@@ -17,6 +17,7 @@ export default function Routes() {
         <Route path="/output-product" exact component={OutputProduct}/>
         <Route path="/inventory" exact component={Inventory}/>
         <Route path="/update-product" exact component={UpdateProduct}/>
+        <Route path="/home" exact component={Login}/>
 
       </Switch>
     </BrowserRouter>

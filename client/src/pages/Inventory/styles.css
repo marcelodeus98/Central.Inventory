@@ -1,7 +1,7 @@
 .content {
   width: max-content;
   padding: 16px 96px;
-  background:#1E90FF;
+  background:#FFD700;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   align-items: center;
@@ -17,12 +17,8 @@
   align-items: center;
  }
 
-client-container{
-  max-width: 100%
-}
-
 .title-lgconatiner{
-  background-color:#1E90FF;
+  background-color:#FFD700;
   height: 50px;
   list-style: none;
   align-items: center;
@@ -133,10 +129,10 @@ client-container{
   color: #FFF;
   border-radius: 8px;
   border:none;
-  background-color: #1E90FF;
+  background-color:#FFD700;
 }
 
 .modal-title{
-  color: #00008B;
+  color:#FF8C00;
   padding: 1rem;
 }

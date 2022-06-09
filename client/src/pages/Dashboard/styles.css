@@ -23,7 +23,6 @@
   width: 260px;
   margin-left: auto;
   margin-top: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,13 +36,13 @@
   height: 60px;
   width: 60px;
   border-radius: 4px;
-  border: 1px solid #1E90FF;
+  border: 1px solid 	#FFD700;
   background: transparent;
   margin-left: 16px;
   transition: border-color 0.2s;
 }
 .dashboard-container ul li button svg {
-  background-color:#1E90FF;
+  background-color:	#FFD700;
 }
 
 .dashboard-container header button:hover {
@@ -63,7 +62,7 @@
 }
 
 .dashboard-container ul li {
-  background:#1E90FF;
+  background:	#FFD700;
   padding: 24px;
   border-radius: 8px;
   position: relative;
@@ -125,7 +124,6 @@
 .modal-content{
   width: 90%;
   max-width: 500px;
-  background-color:red;
   border-radius: 8px;
 }
 
@@ -138,10 +136,10 @@
 .button-modal{
   margin: 1rem;
   padding: 6px;
-  color: #1E90FF;
+  color: #FF8C00;
   border-radius: 8px;
   border:none;
-  background-color: #00008B;
+  background-color: 	#FFD700;
 }
 
 .modal-separator{
@@ -160,21 +158,26 @@ li{
 
 }
 
+strong{
+  color: #000000;
+}
+
 span{
-  color:#00008B;
+  color:#FFF;
   font-size: 32px;
 }
 
 h1{
-  color:#00008B;
+  color: #fff;;
 }
 
 .logo-container{
-  max-width: 100%
+  max-width: 100%,
+  
 }
 
 .title-lgconatiner{
-  background-color:#1E90FF;
+  background-color:	#FFD700;
   height: 50px;
   list-style: none;
   align-items: center;

@@ -43,7 +43,7 @@ function Dashboard() {
       <header>
         <span>BEM VINDO</span>
         <Link className='button' onClick={openModal}>Notificações
-          <MdNotificationsNone size={48} color='#fff' />
+          <MdNotificationsNone size={48} color='#000' />
         </Link>
         
       </header>
@@ -84,7 +84,7 @@ function Dashboard() {
           <h1 className='modal-title'>Notificações</h1>
           <div className='modal-separator'></div>
           <div className='modal-itens'>
-          <ul style={{marginTop:10, padding:30, borderRadius:6, background:'#DCDCDC'}}>
+          <ul style={{marginTop:10, padding:30, borderRadius:6, background:'#FFD700'}}>
               {products.map(product => (
                 <li key={product.id} style={{background:'#FFF'}}>
                   <div className='modal-item'>
