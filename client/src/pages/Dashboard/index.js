@@ -37,7 +37,7 @@ function Dashboard() {
   return (
     <>
     <section className="logo-container">
-        <h1 className="title-lgconatiner">Central.Inventory</h1>
+        <h1 className="title-lgcontainer">Central.Inventory</h1>
     </section>
     <div className='dashboard-container'>
       <header>
@@ -55,7 +55,7 @@ function Dashboard() {
 
         <Link to='/inventory'>
           <li>
-            <strong>INVENTÁRIO</strong>
+            <strong style={{color:'#000'}}>INVENTÁRIO</strong>
             <button type='button'>
               <IoIosListBox size={24} color='#000' />
             </button>
@@ -64,7 +64,7 @@ function Dashboard() {
 
         <Link to='#'>
           <li>
-            <strong>LEVANTAMENTO</strong>
+            <strong style={{color:'#000'}}>LEVANTAMENTO</strong>
             <button type='button'>
               <BiListCheck size={24} color='#000' />
             </button>

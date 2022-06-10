@@ -34,7 +34,7 @@ function InputProduct() {
   return (
     <>
       <section className="logo-container">
-        <h1 className="title-lgconatiner">Central.Inventory</h1>
+        <h1 className="title-lgcontainer">Central.Inventory</h1>
       </section>  
       <Form onSubmit={handleUpdateQuant_all} schema={InputEquipment}>  
         <div className='client-container'>

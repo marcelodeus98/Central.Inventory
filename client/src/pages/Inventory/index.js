@@ -75,8 +75,8 @@ function Client() {
 
           <div style={{background:'#FFD700', marginTop:20, padding:20, borderRadius:8, width:'auto'}}>
             <div className='input-group'>
-              <h1 className="title-lgcontainer" style={{background:'#FFD700'}}>Cadastro de produto</h1>
-              <Input name='name_equipment' className='title-lgconatainer' placeholder='Produto'/>
+              <h1 className="title-lgcontainer" style={{background:'#FFD700', color:'#000'}}>Cadastro de produto</h1>
+              <Input name='name_equipment' className='title-lgconatainer' placeholder='Produto' style={{width:'100%'}}/>
             </div>
           </div>
           <Header/>

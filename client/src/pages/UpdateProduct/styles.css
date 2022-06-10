@@ -1,11 +1,11 @@
  .content {
   width: 100%;
   padding: 16px 96px;
-  background:#1E90FF;
+  background:#FFD700;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -31,7 +31,6 @@
   color: #696969;
   font-size: 15px;
   padding: 0 24px;
-  
   padding-top: 20px;
   border: 1px;
   background-color: white;
@@ -52,11 +51,11 @@
 }
 
 .title-lgcontainer{
-  background-color:#1E90FF;
+  background-color:	#FFD700;
   height: 50px;
   list-style: none;
   align-items: center;
   text-align: center;
   padding-top: 1rem;
-  color: white;
+  color: #000;
 }

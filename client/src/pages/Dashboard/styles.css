@@ -155,11 +155,12 @@ li{
   padding: 1px;
   border-radius: 8px;
   list-style: none;
+  color: #000;
 
 }
 
 strong{
-  color: #000000;
+  color: #000;
 }
 
 span{
@@ -176,13 +177,12 @@ h1{
   
 }
 
-.title-lgconatiner{
+.title-lgcontainer{
   background-color:	#FFD700;
   height: 50px;
   list-style: none;
   align-items: center;
   text-align: center;
   padding-top: 1rem;
-  color: white;
-  
+  color: #000;
 }
