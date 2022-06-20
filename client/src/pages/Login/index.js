@@ -15,29 +15,18 @@ const validateRegister = yup.object().shape({
   });
   
     function Home() {
-      async function handleRegisterSubmit({
-        name,
-        user,
-        password
-      }) {
-        try{
-          const response = await api.post('/register', {name, user,password})
-          console.log(response.data)
-          alert("User registred!")
-        } catch(err){
-            alert("User not register!");
-        };
-      };
+     
     
       async function handleLoginSubmit({
-        user, 
+        user,
+        password 
       }) {
         try{
-          const response = await api.post('/login', {user})
+          const response = await api.post('/login', {user, password})
           console.log(response.data)
-          alert("User connected!")
+          alert("Usuário conectado!")
         } catch(err){
-            alert("User not found!");
+            alert("Usuário não conectado ou não foi encontrado!");
         };
       };
     

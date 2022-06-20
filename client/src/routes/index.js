@@ -12,12 +12,12 @@ export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Dashboard} />
+        <Route path="/" exact component={Login} />
         <Route path="/input-product" exact component={InputProduct}/>
         <Route path="/output-product" exact component={OutputProduct}/>
         <Route path="/inventory" exact component={Inventory}/>
         <Route path="/update-product" exact component={UpdateProduct}/>
-        <Route path="/home" exact component={Login}/>
+        <Route path="/home" exact component={Dashboard}/>
 
       </Switch>
     </BrowserRouter>

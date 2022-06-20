@@ -7,6 +7,7 @@ const sequelize = new Sequelize('inventory', 'root' , 'colmeia@01', {
     dialect: 'mysql' //linguagem do sql
 });
 
+
 //Dev
 // Verificando conexão  com o banco
 sequelize.authenticate().then(() => {
@@ -16,4 +17,7 @@ sequelize.authenticate().then(() => {
 }
 )
 
-module.exports = sequelize
+
+module.exports = sequelize;
+
+
