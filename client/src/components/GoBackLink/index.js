@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function GoBackLink () {
     return (
         <section>
-            <Link className='back-link' to='/'>
+            <Link className='back-link' to='/home'>
             <FiArrowLeft size={24} color='#FFD700' />
             <h1 style={{color:'#FFF'}}>Voltar para tela inicial</h1>
             </Link>

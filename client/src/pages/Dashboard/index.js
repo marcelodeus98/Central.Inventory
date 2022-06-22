@@ -1,4 +1,5 @@
 import React, { useEffect ,useState } from 'react';
+import {useHistory} from 'react-router-dom';
 import {MdNotificationsNone} from 'react-icons/md';
 import {IoIosListBox} from 'react-icons/io';
 import { BiListCheck } from 'react-icons/bi';
@@ -13,6 +14,16 @@ Modal.setAppElement("#root");
 function Dashboard() {
   const [products, setProducts] = useState([]) 
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
+  
+  const {push} = useHistory();
+
+
+  function handleLogout(){
+    setLoading(true);
+    setLoading(false);
+    push('/')
+  }
 
   async function loadEquipments() {
     try{

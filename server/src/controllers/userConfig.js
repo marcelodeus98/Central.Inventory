@@ -2,8 +2,7 @@ const User = require ('../models/users');
 
 module.exports = {
     async login (request, response) {
-        const {user } = request.body;
-        const {password} = request.body;
+        const {user , password} = request.body;
        /* const withEmailUsers = await User.findAll({
         where: {
           email
@@ -13,14 +12,13 @@ module.exports = {
            return response.status(400).json({msg: 'User not found.'})
        } */
 
-       const userValid = await User.findOne({ where: { user } });
-       const passwordValid = await User.findOne({ where: { password } });
+       const userValid = await User.findOne({ where: {user, password}});
 
-       if (!userValid || !passwordValid) {
-         return response.status(401).json({ error: 'User not found' });
+       if (!userValid) {
+         return response.status(401).json({ error: 'User does not exists' });
        }
 
-       return response.status(200).json({msg: 'User connected!.'})
+       return response.status(200).json(user);
 
     }
 }
