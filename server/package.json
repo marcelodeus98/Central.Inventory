@@ -1,0 +1,25 @@
+{
+  "name": "inventory_base_v1",
+  "version": "0.0.1",
+  "description": "Codigo teste para criação de um inventário",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "JMarcelo Deus",
+  "license": "ISC",
+  "dependencies": {
+    "@types/sequelize": "github:types/sequelize",
+    "axios": "^1.7.2",
+    "bcryptjs": "^2.4.3",
+    "connect-session-sequelize": "^7.1.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.10.0",
+    "sequelize": "^6.19.0",
+    "yup": "^0.32.11"
+  }
+}

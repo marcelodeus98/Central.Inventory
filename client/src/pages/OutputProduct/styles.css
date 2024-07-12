@@ -1,0 +1,48 @@
+ .content {
+  width: 100%;
+  padding: 16px 96px;
+  background:#1E90FF;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ section {
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 16px;
+}
+
+ label{
+  width: 100%;
+  height: 60px;
+  color: #696969;
+  font-size: 15px;
+  padding: 0 24px;
+  padding-top: 20px;
+  border: 1px;
+  background-color: white;
+  border-radius: 8px;
+ }
+
+ select{
+  border-radius: 8px;
+  color: #696969;
+  font-size: 15px;
+  padding: 0 24px;
+ }
+ 
+.logo-container{
+  max-width: 100%
+}
+
+.title-lgconatiner{
+  background-color:#1E90FF;
+  height: 50px;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+}

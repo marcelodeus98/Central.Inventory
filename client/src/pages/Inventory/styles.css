@@ -1,0 +1,156 @@
+.content {
+  width: max-content;
+  padding: 16px 96px;
+  background:#1E8EF8;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  align-items: center;
+}
+
+ section {
+  max-width: 380px;
+  margin-bottom: 16px;
+}
+
+ .content form .input-group {
+  background-color: #41414d;
+  align-items: center;
+ }
+
+.title-lgconatiner{
+  background-color:#1E8EF8;
+  height: 50px;
+  color: #FFF;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  font: 400  Playfair, sans-serif;
+}
+
+.client-container ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  list-style: none;
+  width: 100%;
+}
+
+.client-container ul li {
+  background: #eee;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.client-container ul li button {
+  margin-top: 0.5rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  justify-content: space-around;
+}
+
+.container-buttons {
+  display: flex;
+  justify-content:flex-start;
+  gap:8px;
+}
+
+.container-buttons button {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 px;
+  flex: 1;
+  background: transparent;
+  border: 0;
+}
+
+.container-buttons button svg{
+  padding-left: 15px;
+}
+
+.container-buttons button svg .button-delete{
+  padding-left: 0;
+}
+
+.client-container ul li button:hover {
+  opacity: 0.8;  
+}
+
+.client-container ul li strong{
+  display: block;
+  margin-bottom: 16px;
+  color: #41414d; 
+}
+
+.client-container ul li p + strong {
+  margin-top: 32px;
+}
+
+.client-container ul li p {
+  color: #737380;
+  line-height: 21px;
+  font-size: 16px;
+}
+
+
+.separator div{
+  margin-top: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #737380;;
+}
+
+.modal-overlay{
+  background-color: rgba(10,23,55,0.5);;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.modal-content{
+  width: 90%;
+  max-width: 500px;
+  background-color:#FFF;
+  border-radius: 8px;
+}
+
+.button-modal{
+  margin: 1rem;
+  padding: 6px;
+  color: #FFF;
+  border-radius: 8px;
+  border:none;
+  background-color:#1E8EF8;
+}
+
+.modal-title{
+  color:#1E8EF8;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) {
+  .client-container ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .client-container ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

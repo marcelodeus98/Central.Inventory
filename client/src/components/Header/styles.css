@@ -1,0 +1,29 @@
+.client-container{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+    align-items: center;
+  }
+ 
+  .client-container-header{
+    display: flex;
+  }
+
+  .client-container header {
+    align-items: center;
+   
+  }
+
+  .client-container header button {
+    width: 260px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 32px auto;
+  }
+
+  .client-container header button svg {
+    padding-left: 16px;
+   }

@@ -1,0 +1,106 @@
+.content {
+  width: 100%;
+  padding: 16px 96px;
+  background:#1E90FF;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ section {
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 16px;
+}
+
+.content form {
+  width:min-content;
+}
+
+ .content form .input-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+ }
+
+ label{
+  color: #696969;
+  font-size: 15px;
+ border: none;
+ }
+
+ select{
+  border: 1px;
+  height: 60px;
+  border-radius: 8px;
+  color: #696969;
+  font-size: 15px;
+  padding: 0 24px;
+ }
+ 
+.logo-container{
+  max-width: 100%
+}
+
+.title-lgcontainer{
+  background-color:#1E90FF;
+  height: 50px;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+}
+
+.separator{
+  display: flex;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.separator div:nth-child(2){
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding: 0 1.35rem;
+  line-height: 0;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3){
+  width: 100%;
+  height: 1px;
+}
+
+.input-group{
+    position: relative;
+}
+
+.input{
+  padding: 10px;
+  border: none;
+  font: inherit;
+  background-color: transparent;
+  outline: 2px solid #fff;
+}
+
+.input-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transition: transform .25s;
+}
+
+.input:focus+.input-label,
+.input:valid+.input-label{
+  transform: translate(10px, -14px) scale(.8);
+  color:#1E90FF;
+  padding-inline: 5px;
+  background-color: #fff;
+}
+
+.input:is(:focus, :valid){
+  outline-color: #1E90FF;
+}

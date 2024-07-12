@@ -1,0 +1,41 @@
+async createUser(req, res){
+  const schema = object().shape({
+      name: string().required(),
+      user: string().required(),
+      password: string().required()
+  });
+  
+  const password = req.body.password;
+
+  const salt = bcrypt.genSaltSync(10);
+  const hash = bcrypt.hashSync(password, salt);
+
+  if(!(await schema.isValid(req.body))) {
+      return res.status(400).json({ error: 'Validation fails.' })
+  }
+  
+  try{
+      const existingUser = await User.findOne({
+          where:{
+              user: req.body.user
+          }
+      });
+
+      if(existingUser){
+          return res.status(409).json({ error: 'User already registered.'});
+      };
+
+      const { name, user} = await User.create(req.body,);
+      return res.json({
+          name, 
+          user,
+          password
+      });
+  }
+  catch(err){
+      return res.status(500).json({ error: 'Internal server error.'});
+  }
+},
+
+
+No código acima, estou encontrando um problema que deveria ser passar a minha váriavel hash , para a minha query create, pois o mesmo já está recebendo o req.body para pegar a name, e user, e o password a qual deveria requerir do mesmo já está sendo passado para o hash
